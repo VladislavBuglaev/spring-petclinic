@@ -28,7 +28,10 @@
     <wro4j.version>1.8.0</wro4j.version>
 
     <jacoco.version>0.8.2</jacoco.version>
-
+      <sonar.host.url>http://192.168.0.107:9000</sonar.host.url>
+      <sonar.login>b9988ca0ec922f971a5ca750a0c1d1fb07326073</sonar.login>
+      <sonar.language>java</sonar.language>
+      <sonar.scm.provider>git</sonar.scm.provider>
   </properties>
 
   <dependencies>
