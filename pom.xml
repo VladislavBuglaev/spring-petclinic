@@ -11,6 +11,7 @@
         <profile>
             <id>jenkins</id>
             <properties>
+                <maven.test.skip>true</maven.test.skip>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>${project.artifactId}</artifactId>
                 <version>${project.version}</version>
