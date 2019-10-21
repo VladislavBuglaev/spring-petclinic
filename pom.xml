@@ -81,9 +81,9 @@
         <wro4j.version>1.8.0</wro4j.version>
 
         <jacoco.version>0.8.2</jacoco.version>
-        <sonar.host.url>http://192.168.0.107:9000/sonar</sonar.host.url>
-
-        <sonar.login>b9988ca0ec922f971a5ca750a0c1d1fb07326073</sonar.login>
+        <sonar.host.url>http://172.19.0.2:9000</sonar.host.url>
+        <sonar.login>admin</sonar.login>
+        <sonar.password>admin</sonar.password>
         <sonar.language>java</sonar.language>
         <sonar.scm.provider>git</sonar.scm.provider>
     </properties>
@@ -209,7 +209,11 @@
                     </execution>
                 </executions>
             </plugin>
-
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.6.0.1398</version>
+            </plugin>
             <!-- Spring Boot Actuator displays build-related information if a git.properties
               file is present at the classpath -->
             <plugin>
